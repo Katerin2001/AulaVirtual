@@ -1,0 +1,217 @@
+@import url("https://fonts.cdnfonts.com/css/frest-style");
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+:root {
+  --FS-heading: 4rem;
+  --FS-subheading: 3rem;
+  --FS-general: 1.6rem;
+
+  --CL-white: white;
+  --CL-black: black;
+
+  --CL-primary-red: #d90429;
+  --CL-primary-dark: #161a1d;
+  --CL-primary-blue: #0d6efd;
+  --CL-aqua: aqua;
+
+  --FF-signature: "Frest Style", sans-serif;
+  --FF-general: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  transition: 0.2s all;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: var(--FS-general);
+  font-family: var(--FF-general);
+}
+
+picture,
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* SIZES */
+
+.h-100 {
+  height: 100%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.w-100 {
+  height: 100%;
+}
+
+.w-75 {
+  height: 75%;
+}
+
+.w-50 {
+  height: 50%;
+}
+
+.w-25 {
+  height: 25%;
+}
+
+/* FLEX */
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+}
+
+.grid-auto-columns {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.grid-auto-rows {
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+}
+
+.grid-three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-align-center {
+  align-items: center;
+}
+
+.grid-justify-center {
+  justify-items: center;
+}
+
+.grid-place-center {
+  place-items: center;
+}
+
+/* WEIGHTS */
+
+.font-bold {
+  font-weight: bolder;
+}
+
+/* TEXT ALIGN */
+
+.text-center {
+  text-align: center;
+}
+
+/* IMAGES */
+
+.img-fluid {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ICONS */
+
+.icono {
+  font-size: 7rem;
+}
+
+/* BACKGROUNDS */
+
+.bg-primary-red {
+  background-color: var(--CL-primary-red);
+}
+
+.bg-primary-dark {
+  background-color: var(--CL-primary-dark);
+}
+
+.bg-primary-blue {
+  background-color: var(--CL-primary-blue);
+}
+
+/* FONT FAMILY */
+
+.signature {
+  font-family: var(--FF-signature);
+  font-size: calc(var(--FS-heading));
+}
+
+/* TABLES */
+
+.table tbody {
+  cursor: pointer;
+}
+
+.table tbody tr td {
+  padding: 0.75rem 0;
+}
+
+/* BORDER */
+
+.outline-none {
+  outline: none !important;
+}
+
+.border-primary-dark {
+  border: 1px solid var(--CL-primary-dark);
+}

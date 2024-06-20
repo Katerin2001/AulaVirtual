@@ -1,0 +1,100 @@
+.student {
+  padding: 2rem;
+  transition: 0.2s;
+  height: 58rem;
+  grid-auto-rows: unset;
+}
+
+.student__content {
+  text-align: center;
+  color: var(--CL-white);
+}
+
+.student__name {
+  text-transform: uppercase;
+  font-size: calc(var(--FS-general) + 1rem);
+  max-width: 85%;
+  margin: 1rem auto;
+  line-height: 1.25;
+}
+
+.student__field {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.student__value {
+  margin: 0;
+  font-style: italic;
+}
+
+.student__profile {
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid var(--CL-primary-blue);
+}
+
+.student__profile:hover {
+  animation: elevator 2s infinite ease-in-out;
+}
+
+@keyframes elevator {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.submit__button {
+  padding: 2rem;
+}
+
+/* EDITOR */
+
+.student__edit {
+  padding: 2rem;
+  transition: 0.2s;
+}
+
+.student__form {
+  color: var(--CL-black);
+}
+
+.student__form label {
+  font-size: calc(var(--FS-general) + 0.5rem);
+  width: 100%;
+}
+
+.student__form label input,
+.student__form label select {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  border: none;
+  outline: 1px solid var(--CL-primary-dark);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.button-dark {
+  background-color: var(--CL-primary-dark);
+  color: var(--CL-white);
+  border-radius: 0.5rem;
+  padding: 2rem 1rem !important;
+  margin-top: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button-dark:hover {
+  background-color: var(--CL-white);
+  color: var(--CL-black);
+}

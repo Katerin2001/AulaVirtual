@@ -1,0 +1,7 @@
+.course__available {
+  background-color: var(--CL-aqua) !important;
+}
+
+.modal * {
+  font-size: var(--FS-general) !important;
+}
